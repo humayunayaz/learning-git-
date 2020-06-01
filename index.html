@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style  .css">
+    <title>Class7</title>
+    <style>
+
+            h3,p,h1{
+                
+                text-align: center;
+            }
+            body{
+                background-color: cadetblue;
+            }
+            /* img{
+                position: fixed;
+                bottom: 10px ;
+                left: 50px;
+            } */
+         
+        /* .black{
+            background: #000;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            margin: 5px 10px 5px 10px;
+        }
+         
+        .white{
+            background: white;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            margin: 5px 10px 5px 10px;
+        }
+        img{
+            position:  absolute ;
+            top :17px;
+            left: 20px; 
+            
+                      
+        } */
+        /* form{
+            padding: 15px;
+            width: 500px;
+            text-align: center;    
+             
+        }
+        input{
+             padding: 10px;
+            margin:  5px; 
+             
+                       }
+        input.text{
+            background-image: url( 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png');
+            background-size: 30px;
+            background-repeat: no-repeat;
+            padding: 15px 15px 15px 40px;
+        }               
+        input.password{
+            background-image: url('data:image/png;base64,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' );
+            background-size: 30px;
+            background-repeat: no-repeat;
+            padding: 15px 15px 15px 40px;
+        
+        }               
+        
+        input:focus{
+            border-color:darkgreen
+        }
+        button {
+            padding: 10px;
+            color: brown;
+            cursor:pointer ;
+        }    
+        button:hover{
+            padding: 10px;
+            color: darkblue;
+            background-color: darkcyan;
+        }
+        fieldset{
+             border-radius: 5px;
+             border: 1px solid ;
+             padding: 10px 10px 10px 10px;
+             margin-right: 100px ;
+             margin-left: 100px ;
+             border-radius: 30px;
+              }
+
+         legend{
+             text-align: center;
+             background-color: blue;
+             color: white;
+             font-family: Georgia, 'Times New Roman', Times, serif;
+             padding: 10px;
+             border-radius: 5px;
+         }      */
+
+
+    </style>
+</head>
+<body>
+    <h1>Version Control System</h1>
+    <h3>Learning Git </h3>
+    <p>
+        Learing Git Along Text
+        humayn ayaz ahmed 
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cum totam nihil natus illo reprehenderit, tenetur architecto,
+         labore suscipit soluta deleniti iusto libero
+         possimus distinctio atque exercitationem ea porro, delectus quibusdam.
+    </p>
+   
+    <!-- <div id="page">
+        <div id="logo">
+        <img src="images/logo.gif" alt="The Analog Specialists" />
+        </div>
+        <ul id="navigation">
+        <li><a href="#" class="on">Home</a></li>
+        <li><a href="#">For Sale</a></li>
+        <li><a href="#">Repairs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+        <p>
+        <img src="images/keys.jpg" alt="Fender Rhodes, Hohner Clavinet,
+        and Wurlitzer EP200" />
+        </p>
+        <p>
+        We specialise in the sales and repair of classic keyboards, in particular
+        the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
+        </p>
+        </div> --> 
+        <!-- <fieldset>
+            <legend>Login Details</legend>
+                      <form action=""> 
+                <input type="text"  placeholder="Email"  class="text" >
+                <br>
+                <input type="Password " placeholder="Passwordd" class="password" >
+                <br>
+                <button> Submit </button>
+            </form>    
+        </fieldset>   -->
+         
+            <!-- <div class="black">  
+                
+            </div>
+            <div class="white">
+
+            </div>
+            <div class="black">  
+                
+            </div>
+            <div class="white">
+
+            </div>
+         <img width="90px" height="80px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUC3iNEi6y7uwd8VozKDaw5G1kYuM-5A75NspTgSkXF3BqmYyt&usqp=CAU" alt=""> -->
+<!-- 
+
+            <p>
+                
+                Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit.
+                 Assumenda ad id deserunt veritatis officia soluta 
+                 alias eos doloremque, repellendus, necessitatibus optio minus 
+                mollitia nesciunt nihil pariatur odit magni vero tenetur?
+ <br>           <BR></BR>
+                Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit.
+                 Assumenda ad id deserunt veritatis officia soluta 
+                 alias eos doloremque, repellendus, necessitatibus optio minus 
+                mollitia nesciunt nihil pariatur odit magni vero tenetur?
+<br>    <BR></BR>
+                Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit.
+                 Assumenda ad id deserunt veritatis officia soluta 
+                 alias eos doloremque, repellendus, necessitatibus optio minus 
+                mollitia nesciunt nihil pariatur odit magni vero tenetur?
+                   <BR></BR>
+                Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit.
+                 Assumenda ad id deserunt veritatis officia soluta 
+                 alias eos doloremque, repellendus, necessitatibus optio minus 
+                mollitia nesciunt nihil pariatur odit magni vero tenetur?
+                Lorem ipsum dolor, 
+                <BR></BR>
+                sit amet consectetur adipisicing elit.
+                 Assumenda ad id deserunt veritatis officia soluta 
+                 alias eos doloremque, repellendus, necessitatibus optio minus 
+                mollitia nesciunt nihil pariatur odit magni vero tenetur?
+            </p>
+
+            <img width="20px" src="data:image/png;base64,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" alt=""> -->
+
+    </body>
+</html>
